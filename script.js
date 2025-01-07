@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       .pauseFor(500)
                       .typeString('<br>pertanyaan pertanyaan kamu')
                       .pauseFor(500)
-                      .typeString('<br>excited kamu kasih ')
+                      .typeString('<br>excited yang kamu kasih ')
                       .pauseFor(500)
                       .callFunction(() => {
                         const lanjut1 = document.createElement('button');
