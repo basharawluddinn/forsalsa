@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOR SALSA</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet" />
+    <!-- Kode lainnya -->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.17.0/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <div class="large">Maaf Versi Laptop dan Komputer tidak tersedia</div>
+    <div class="container">
+      <form id="form" method="POST">
+        <div class="form-group">
+          <label for="nama" id="ketik"></label>
+          <input type="text" id="nama" name="nama" />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" id="submit-btn" />
+        </div>
+      </form>
+
+      <!-- Modifikasi tag audio -->
+      <audio id="background-audio" autoplay loop>
+        <source src="audio/dimas.mp3" type="audio/mpeg" />
+      </audio>
+
+      <div class="container-ucapan" id="container-ucapan" style="display: none">
+        <div class="teks-ucapan" id="teks-ucapan"></div>
+        <div class="tau-gak" id="tau-gak">
+          <button type="button" class="tau" id="tau">Tau</button>
+          <button type="button" class="enggak" id="enggak">Enggak</button>
+          <button class="lanjut" id="lanjut">Lanjut</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-kisah" id="container-kisah">
+      <div class="kisah-right" id="kisah-right">
+        <img src="img/1.png" alt="Foto PKL 1" />
+      </div>
+      <div class="kisah-left" id="kisah-left">
+        <img src="img/3.png" alt="Foto PKL 1" />
+        <div class="kata-kisah" id="kata-kisah"></div>
+      </div>
+      <div class="kisah-right-end" id="kisah-right-end">
+        <img src="img/2.png" alt="Foto PKL 1" />
+      </div>
+      <div class="container-wa">
+        <a href="https://wa.me/62895621288666?text=Makasih%20banget%20loh,saya%20jadi%20terharu%20melihatnya😇" class="whatsapp-button">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
+          Balas Di Whatsapp dong😁
+        </a>
+      </div>
+    </div>
+
+    <!-- Script JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+
+        // Fungsi untuk memulai audio
+        function playAudio() {
+          // Mencoba memutar audio saat halaman dimuat
+          audio.play().catch(function (error) {
+            console.log('Autoplay prevented:', error);
+
+            // Menambahkan event listener untuk klik pertama di halaman
+            document.body.addEventListener(
+              'click',
+              function initAudio() {
+                audio.play();
+                document.body.removeEventListener('click', initAudio);
+              },
+              { once: true }
+            );
+          });
+        }
+
+        // Panggil fungsi playAudio saat halaman dimuat
+        playAudio();
+
+        // Tambahkan event listener untuk form submission
+        document.getElementById('form').addEventListener('submit', function (e) {
+          audio.play();
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+/* Style untuk container form */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: url('img/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Signika', Sans-Serif;
+}
+
+.large {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style untuk form */
+#form {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Style untuk elemen form di dalam container */
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #45a049;
+}
+
+.container-ucapan {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.teks-ucapan {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tau-gak {
+    display: none;
+    justify-content: center;
+}
+
+.tau,
+.enggak,
+.boleh,
+.cepet,
+.lihat,
+.tidak,
+.lanjut {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tau {
+    margin-right: 3px;
+}
+
+.enggak {
+    margin-left: 3px;
+}
+
+.lanjut {
+    display: none;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.tau:hover {
+    transform: scale(1.05, 1.10);
+}
+
+.enggak:hover {
+    transform: scale(1.05, 1.10);
+}
+
+.lanjut:hover {
+    transform: scale(1.05, 1.10);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
+
+.container-kisah {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.kisah-right, .kisah-left, .kisah-right-end {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.kisah-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+    color: white
+    
+}
+
+.kisah-right img {
+    width: 180px;
+}
+
+.kisah-left img {
+width: 300px;
+}
+
+.kisah-right-end img {
+    width: 350px;
+}
+
+.kata-kisah {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Pastikan teks ada di tengah */
+    margin: 0 auto;     /* Tengahkan teks */
+    width: 90%;         /* Pastikan tidak keluar dari layar */
+}
+
+.kata-kisah .highlight {
+    font-family: 'Great Vibes', cursive; /* Gaya elegan */
+    font-size: 40px; /* Ukuran besar untuk bagian "I LOVE U SOO" */
+    color: #FFD700;  /* Warna emas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+.kata-kisah .highlight-name {
+     font-family: 'Great Vibes', cursive; /* Gaya elegan */
+    font-size: 40px; /* Ukuran besar untuk bagian "I LOVE U SOO" */
+    color: #FFD700;  /* Warna emas */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+
+.kata-kisah p {
+    margin-left: -20px;
+}
+
+.kata-kisah div {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.container-wa {
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp-button {
+    display: none;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .kata-kisah {
+        font-size: 16px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .kata-kisah .highlight {
+        font-size: 30px;
+    }
+
+    .kata-kisah .highlight-name {
+        font-size: 20px;
+    }
+}
+
+/* Responsif untuk Laptop */
+@media screen and (min-width: 1024px) {
+    .kata-kisah {
+        font-size: 20px;
+        padding: 20px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .kata-kisah .highlight {
+        font-size: 50px;
+    }
+
+    .kata-kisah .highlight-name {
+        font-size: 30px;
+    }
+}
