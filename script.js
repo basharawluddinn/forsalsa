@@ -577,10 +577,6 @@ function playAnimationKenangan() {
           .typeString('<span class="highlight">I Love u soo</span>')
           .pauseFor(500)
           .typeString('<br><p class="highlight-name">Salsa Putri Rahmadani</p>')
-          .pauseFor(1000)
-          .typeString('<br><div>Semoga kita masih bisa terus bersama ')
-          .pauseFor(1000)
-          .typeString('<br><div>Kalaupun tidak semoga bertemu di kesempatan berikutnya')
           .callFunction(() => {
             const waButton = document.querySelector('.whatsapp-button');
             waButton.style.display = 'inline-flex';
