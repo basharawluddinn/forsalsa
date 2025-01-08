@@ -375,7 +375,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                   .typeString('<br>tapi aku rasa, rasa sayang kamu jauh lebih besar ke zacky dibanding aku,')
                                   .pauseFor(500)
                                   .typeString('<br>kamu selalu excited ke zacky dalam hal apapn, komunikasi, candaan, hal hal random dll, banyak hal yang gak aku dapet dan zacky selalu dapet dari kamu.')
-                                  .callFunction(() => {
+                                  .pauseFor(500)
+                                  .typeString('<br>jujur aku iri banget sama zacky')
+                                  .pauseFor(500)
+                                  .typeString('<br>rasanya dia dapet cinta yang begitu besar dan tulus dari kamu')
+                                    .callFunction(() => {
                                     const lanjut3 = document.createElement('button');
                                     lanjut3.classList.add('lanjut');
                                     lanjut3.textContent = 'Lanjut';
@@ -441,6 +445,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                                     .pauseFor(500)
                                                     .typeString('<br>and then, kalo kamu butuh aku langsung wa aja ya. pasti aku luangin waktu buat kamu,')
                                                     .pauseFor(500)
+                                                    .typeString('<br>aku masih sama kok, alwyas fsat respon buat kamu, dan kamu masih jadi notif favorit aku')
+                                                    .pauseFor(500)
                                                     .typeString('<br>aku sayaangg bangeett sama kamu.')
                                                     .callFunction(() => {
                                                       const lanjut6 = document.createElement('button');
@@ -454,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                                         typewriter
                                                           .deleteAll(10)
                                                           .typeString('terimakasih yaa udah mau dan jadi peran penting di hidup aku yang bikin aku seneng setiap harinya.')
-                                                          .callFunction(() => {
+                                                            .callFunction(() => {
                                                             const lanjut7 = document.createElement('button');
                                                             lanjut7.classList.add('lanjut');
                                                             lanjut7.textContent = 'Lanjut';
@@ -465,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                                               lanjut7.style.display = 'none';
                                                               typewriter
                                                                 .deleteAll(10)
-                                                                .typeString('<br><br>Semoga kita bisa bertemu di titik terbaik ya🤍')
+                                                                .typeString('<br><br>Semoga kita bisa terus bareng ya🤍')
                                                                 .pauseFor(500)
                                                                 .typeString('<br>i LOVE U SAL.')
                                                                 .callFunction(() => {
