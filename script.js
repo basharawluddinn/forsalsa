@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         .pauseFor(500)
                                         .typeString('<br> jadi aku minta maaf kalo adanya aku jadi penghalang buat kalian')
                                         .pauseFor(500)
-                                        .typeString('<br>kamu juga selalu ketemu sama dia, kamu selalu  yang nagjak duluan buat jajan atau ketemu')
+                                        .typeString('<br>kamu juga selalu ketemu sama dia, kamu selalu  yang ngajak duluan buat ketemu atau jajan bareng')
                                         .pauseFor(500)
                                         .typeString('<br>cara kamu respon juga aku rasa beda jauh antara ke aku sama zacky')
                                         .pauseFor(500)
